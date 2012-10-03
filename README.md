@@ -8,6 +8,7 @@ Latent Dirichlet Allocation (LDA) is used to model text corpora and discover top
 The basic idea is that documents are represented as random mixtures over latent topics, where each topic is characterized by a distribution over words.
 
 LDA assumes the following generative process for each document w in a corpus D:
+
 1. Choose N ~ Poisson(ξ). 
 2. Choose θ ~ Dir(α). 
 3. For each of the N words wn:
@@ -22,6 +23,7 @@ This code uses Collapsed Gibbs Sampling (MCMC) method.
 Input Format
 ------------
 The input corpus is expected to in the following format
+
 		### doc_id 1 ###
 		word1
 		word2
@@ -35,7 +37,7 @@ The input corpus is expected to in the following format
 		...
 		###EOF###
 
-To create a input file in the above format, do:
+To create an input file in the above format, do:
 
 		for each document d:
 			print ### doc id ###
