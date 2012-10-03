@@ -75,7 +75,7 @@ def topwords(topic):
 
 
 print time.strftime('%X'), "Reading Data"
-docs, word_ids, ids_word = read_corpus("data/stream2.txt_10000.seg.txt")
+docs, word_ids, ids_word = read_corpus("data/stream.txt")
 
 alpha = 5
 beta = 0.1
